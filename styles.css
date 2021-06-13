@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+  background-color: #f2f2f2;
+  color: #e2f1f1;
+}
+
+h1 {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 700;
+  font-size: 2.6em;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+p {
+  line-height: 1.5em;
+}
+
+.button {
+  margin-top: 2em;
+  border-radius: 5em;
+  padding: 13px 26px;
+  border: 2px solid #e2f1f1;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+div.full-page {
+  margin: 10% 5%;
+}
+article.sedans,
+article.suvs,
+article.luxury {
+  padding: 3em;
+  position: relative;
+}
+
+/***************
+SEDANS PORTION (1ST SECTION!)
+***************/
+article.sedans {
+  border-radius: 0.5em 0.5em 0em 0em;
+  background-color: #e28525;
+}
+
+article.sedans > p {
+  color: #ffcc96;
+}
+
+.btn-sedan {
+  color: #e28525;
+}
+
+.btn-sedan:hover {
+  color: #e2f1f1;
+  background-color: #e28525;
+}
+
+/*************
+SUVS PORTION (2ND SECTION!)
+*************/
+article.suvs {
+  background-color: #016972;
+}
+article.suvs > p {
+  color: #65aeb2;
+}
+.btn-suvs {
+  color: #016972;
+}
+
+.btn-suvs:hover {
+  background-color: #016972;
+  color: #e2f1f1;
+}
+
+/************
+LUXURY PORTION (3RD SECTION!)
+************/
+article.luxury {
+  background-color: #00403f;
+  border-radius: 0 0 1em 1em;
+}
+article.luxury > p {
+  color: #a3cbcc;
+}
+
+.btn-luxury {
+  color: #00403f;
+}
+
+.btn-luxury:hover {
+  background-color: #00403f;
+  color: #e2f1f1;
+}
+
+/*************
+LARGE DEVICES (1080 PIXELS PLUS)
+*************/
+
+@media only screen and (min-width: 1080px) {
+  div.full-page {
+    display: flex;
+    height: 100%;
+  }
+
+  article.sedans {
+    border-radius: 1em 0 0 1em;
+    height: 500px;
+  }
+
+  article.luxury {
+    border-radius: 0 1em 1em 0;
+  }
+
+  .button {
+    position: absolute;
+    bottom: 50px;
+  }
+}
